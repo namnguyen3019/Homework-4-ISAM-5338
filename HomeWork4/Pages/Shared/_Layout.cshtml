@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - HomeWork4- Shop Layout view</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dard bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-page="/Index">
+                    <img src="~/lib/images/logo.png" class="rounded" style="width: 50px; height: 50px" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Company</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Menu">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="#">Franchise</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="#">Community</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="#">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="#">Store Locator</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center text-lg-start">
+        <div class="row py-2 text-center text-white" style="background-color: #8B4513">
+
+            <div class="col-3">
+                <h1 styple="color:white; font-size: 100px"> Newsletter</h1>
+            </div>
+            <div class="col-6">
+                <p> Sign up for the Shippley Do-Nets e-newsletter and receive delicious deals and sweet insider infor!</p>
+            </div>
+            <div class="col-3" >
+                <form class="form-inline">
+                    <label class="sr-only" for="inlineFormInputName2">Name</label>
+                    <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Email">
+
+                    <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="row py-3" style="background-color: #FFF5EE; min-width: 200px">
+            <div class="col-6">
+                <div class="row">
+                    <p class="col-6" style="font-size: 3em;">FOLLOW US ON</p>
+                    <div class="col-6">
+                        <i class="fab fa-facebook fa-5x"></i>
+                        <i class="fab fa-twitter-square fa-5x"></i>
+                        <i class="fab fa-instagram fa-5x"></i>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="col-md-3 offset-md-3">
+                <div class="row">
+                    <p class="mx-3"style="font-size: 3em;">Menu</p>
+                    <i class="fas fa-clipboard-list fa-5x"></i>
+                </div>
+            </div>
+        </div>
+        <div class="row bg-danger py-2">
+           <div class="col-6 text-white text-center">
+               <p>&copy; Copy Right 2021. Nam Nguyen. All rights reserved</p>
+           </div>
+           <div class="col-6 text-center ">
+               <ul class="list-inline">
+                   <li class="list-inline-item">
+                       <a class="text-white" asp-area="" asp-page="/Index">Company</a>
+                   </li>
+                   <li class="list-inline-item">
+                       <a class="text-white" asp-area="" asp-page="/Menu">Menu</a>
+                   </li>
+                   <li class="list-inline-item">
+                       <a class="text-white" asp-area="" asp-page="#">Franchise</a>
+                   </li>
+                   <li class="list-inline-item">
+                       <a  class="text-white" asp-area="" asp-page="#">Community</a>
+                   </li>
+                   <li class="list-inline-item">
+                       <a  class="text-white" asp-area="" asp-page="#">Contact</a>
+                   </li>
+                   <li class="list-inline-item">
+                       <a class="text-white" asp-area="" asp-page="#">Shop</a>
+                   </li>
+                   <li class="list-inline-item">
+                       <a class="text-white" asp-area="" asp-page="#">Store Locator</a>
+                   </li>
+               </ul>
+           </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
